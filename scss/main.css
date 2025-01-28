@@ -1,0 +1,350 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  width: auto;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  width: 90px;
+}
+nav .group-icons {
+  display: flex;
+  gap: 15px;
+}
+nav .group-icons button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+nav .group-icons button img {
+  width: 25px;
+}
+
+ul, p {
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  font-size: 12px;
+  line-height: 19px;
+  text-align: justify;
+}
+
+h3 {
+  color: #7C6A0A;
+  font-weight: 400;
+  line-height: 65px;
+  font-size: 1.5rem;
+}
+
+main article {
+  text-align: center;
+  align-items: center;
+  width: auto;
+}
+main article p {
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+}
+main article .impact-section {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+main article .impact-section .description {
+  color: #7C6A0A;
+  font-size: 0.9rem;
+}
+main article .impact-section h1 {
+  line-height: 78px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #7C6A0A;
+  margin: 0;
+}
+main article .impact-section .btn-more {
+  background-color: #FA9500;
+  border-radius: 14px;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+}
+main article .img-section img {
+  width: 50%;
+  margin-top: 1rem;
+}
+main .product-section {
+  text-align: center;
+}
+main .product-section .list-card {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+main .product-section .list-card .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  padding: 12px;
+}
+main .product-section .list-card .card .icon-favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-bottom: 1rem;
+}
+main .product-section .list-card .card .icon-favorite .icon {
+  cursor: pointer;
+  width: 18px;
+}
+main .product-section .list-card .card .infor-card {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+main .product-section .list-card .card .infor-card .img-card {
+  width: 90px;
+}
+main .product-section .list-card .card .infor-card .title {
+  font-weight: 600;
+  font-size: 17px;
+}
+main .product-section .list-card .card .infor-card span {
+  width: 300px;
+}
+main .product-section .list-card .card-skinker {
+  background-color: #FFDAC6;
+}
+main .product-section .list-card .card-skinker .infor-card p, main .product-section .list-card .card-skinker .infor-card span {
+  color: #7C6A0A;
+}
+main .product-section .list-card .card-home {
+  background-color: rgb(186, 189, 141);
+}
+main .product-section .list-card .card-home .infor-card p, main .product-section .list-card .card-home .infor-card span {
+  color: white;
+}
+main .info-section .about {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+main .info-section .about div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+main .info-section .about div img {
+  width: 100px;
+}
+main .info-section .about div p {
+  font-size: 16px;
+  color: rgb(232, 100, 36);
+  font-weight: 600;
+  max-width: 300px;
+}
+main .info-section .galery-style {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main .info-section .galery-style div {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+main .info-section .galery-style div img {
+  width: 200px;
+}
+main .info-section .ubication {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main .info-section .ubication img {
+  width: 90%;
+}
+main .info-section h2 {
+  color: #7C6A0A;
+  font-weight: 500;
+  line-height: 65px;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+footer {
+  background-color: #FA9500;
+  width: 100%;
+  padding: 20px;
+}
+footer p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+footer div {
+  display: flex;
+  gap: 20px;
+  margin-top: 2rem;
+}
+footer div img {
+  width: 20px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  main h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  main article .impact-section .description {
+    width: auto;
+    font-size: 20px;
+  }
+  main article .impact-section .btn-more {
+    padding: 15px;
+    font-size: 18px;
+  }
+  main .info-section {
+    margin-top: 3rem;
+  }
+  main .info-section .about div img {
+    width: 50%;
+  }
+  main .info-section .about div p {
+    font-size: 20px;
+  }
+  main .info-section .galery-style {
+    gap: 30px;
+  }
+  main .info-section .galery-style div {
+    margin-top: 1rem;
+  }
+  main .info-section .galery-style div img {
+    width: 50%;
+  }
+  main .product-section .list-card {
+    grid-template-columns: repeat(2, 0fr);
+    justify-content: center;
+    gap: 1rem;
+  }
+  main .product-section .list-card .card {
+    padding: 20px 18px;
+  }
+  main .product-section .list-card .card .icon-favorite {
+    top: 15px;
+  }
+  main .product-section .list-card .card .icon-favorite .icon {
+    width: 22px;
+  }
+  main .product-section .list-card .card .infor-card {
+    gap: 15px;
+  }
+  main .product-section .list-card .card .infor-card .img-card {
+    width: 160px;
+  }
+  main .product-section .list-card .card .infor-card .title {
+    font-size: 22px;
+    max-width: 290px;
+  }
+  main .product-section .list-card .card .infor-card span {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  h3 {
+    font-size: 2.4rem;
+  }
+  main article {
+    display: flex;
+    justify-content: space-around;
+  }
+  main article .impact-section {
+    gap: 1.2rem;
+    align-items: flex-start;
+  }
+  main article .impact-section .description {
+    text-align: left;
+    font-size: 22px;
+    max-width: 800px;
+  }
+  main article .impact-section .btn-more {
+    padding: 15px;
+    font-size: 18px;
+  }
+  main article .img-section img {
+    width: 450px;
+  }
+  main .info-section {
+    margin-top: 4rem;
+  }
+  main .info-section .about div img {
+    width: 50%;
+  }
+  main .info-section .about div p {
+    font-size: 24px;
+  }
+  main .info-section .galery-style {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .info-section .galery-style div {
+    margin-top: 1rem;
+    gap: 30px;
+    display: flex;
+  }
+  main .info-section .galery-style div img {
+    width: 500px;
+  }
+  main .info-section .ubication {
+    margin-bottom: 3rem;
+  }
+  main .info-section .ubication img {
+    width: 500px;
+  }
+  main .product-section .list-card {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 4rem;
+  }
+  main .product-section .list-card .card {
+    padding: 20px 18px;
+  }
+  main .product-section .list-card .card .icon-favorite {
+    top: 15px;
+  }
+  main .product-section .list-card .card .icon-favorite .icon {
+    width: 22px;
+  }
+  main .product-section .list-card .card .infor-card {
+    gap: 15px;
+  }
+  main .product-section .list-card .card .infor-card .img-card {
+    width: 160px;
+  }
+  main .product-section .list-card .card .infor-card .title {
+    font-size: 24px;
+    max-width: 290px;
+  }
+  main .product-section .list-card .card .infor-card span {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=main.css.map */
