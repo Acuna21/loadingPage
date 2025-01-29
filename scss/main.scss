@@ -1,8 +1,9 @@
-// colores
+// variables colores
 $primary-color:#FFEFE7;
 $secundary-color:#FFDAC6;
 $tertiary-color:#BABD8D;
 $primary-text-color:#7C6A0A;
+
 $font-stackl: 'IBM Plex Sans' , sans-serif;
 
 body {
@@ -58,6 +59,12 @@ h3{
     font-size: 1.5rem;
 }
 
+.display-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main{
     article{
         text-align: center;
@@ -71,10 +78,8 @@ main{
         }
 
         .impact-section{
-            display: flex;
+            @extend .display-column;
             gap: 20px;
-            flex-direction: column;
-            align-items: center;
 
             .description{
                 color:$primary-text-color;
@@ -117,9 +122,7 @@ main{
 
             .card{
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @extend .display-column;
                 border-radius: 4px;
                 padding: 12px;
                 
@@ -136,10 +139,8 @@ main{
                 }
 
                 .infor-card{
-                    display: flex;
+                    @extend .display-column;
                     gap: 10px;
-                    flex-direction: column;
-                    align-items: center;
                     margin-top: 1.5rem;
 
                     .img-card{
@@ -158,6 +159,7 @@ main{
             }
 
             .card-skinker{
+                @extend .card;
                 background-color: $secundary-color;
                 .infor-card{
                     p,span{
@@ -167,6 +169,7 @@ main{
             }
 
             .card-home{
+                @extend .card;
                 background-color:rgb(186,189,141);
                 .infor-card{
                     p,span{
@@ -179,10 +182,8 @@ main{
 
     .info-section{
         .about{
-            display: flex;
-            flex-direction: column;
+            @extend .display-column;
             align-content: center;
-            align-items: center;
 
             div{
                 display: flex;
@@ -312,8 +313,6 @@ footer{
 
                 .card{
                     padding: 20px 18px;
-                    // height: 300px; 
-
                     .icon-favorite{
                         top: 15px;
     
@@ -321,7 +320,6 @@ footer{
                             width: 22px;
                         }
                     }
-
 
                     .infor-card{
                         gap: 15px;
@@ -358,6 +356,7 @@ footer{
             .impact-section{
                 gap: 1.2rem;
                 align-items: flex-start;
+
                 .description{
                     text-align: left;
                     font-size: 22px;
